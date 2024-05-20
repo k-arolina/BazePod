@@ -1,0 +1,11 @@
+Životinja: ID životinje (PK), vrsta, ime, ID_staništa (FK), ID_evidencije (FK)
+Hrana: vrsta hrane (PK), potrošena količina, količina za nabavu, cijena, trenutna količina
+Stanje životinja: ID evidencije životinje (PK), datum odlaska, datum dolaska
+Stanište: ID staništa (PK), trenutni broj životinja, max kapacitet
+Zaposlenik: OIB (PK), ime i prezime, adresa, vrsta posla, ID_evidencije (FK)
+Stanje zaposlenika: ID evidencije (PK), datum i vrijeme dolaska, datum i vrijeme odlaska
+Posjetitelj: ID posjetitelja (PK), ime i prezime, datum i vrijeme posjete
+
+ZaposlenikStanište: [OIB_zaposlenika (FK), ID_staništa (FK)] (PK)
+PosjetiteljStanište: [ID_posjetitelja (FK), ID_staništa (FK)] (PK)
+ŽivotinjaHrana: [ID_životinje (FK), vrsta_hrane (FK)] (PK)
